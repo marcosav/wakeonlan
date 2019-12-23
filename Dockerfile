@@ -10,9 +10,10 @@ RUN make install
 
 FROM alpine:3.8
 
+COPY --from=builder /go/src/github.com/mpolden/wakeup/static /opt/wakeup/
 COPY --from=builder /go/bin /opt/wakeup
 
 EXPOSE 8080
 
-CMD ["-c" ,"/opt/wakeup/wakeup-cache"]
+CMD ["-c" ,"/opt/wakeup/wakeup-cache","-s","/opt/wakeup/static"]
 ENTRYPOINT [ "/opt/wakeup/wakeup" ]
