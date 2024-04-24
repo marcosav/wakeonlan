@@ -1,6 +1,6 @@
 # wakeup
 
-[![Build Status](https://travis-ci.org/mpolden/wakeup.svg?branch=master)](https://travis-ci.org/mpolden/wakeup)
+This is a fork from [anjia0532/wakeup](https://github.com/anjia0532/wakeup), which adds `arm64` support to [docker images](https://hub.docker.com/repository/docker/marcosav/wakeonlan/general).
 
 `wakeup` provides a small HTTP API and JavaScript front-end for
 sending [Wake-on-LAN](https://en.wikipedia.org/wiki/Wake-on-LAN) messages to a
